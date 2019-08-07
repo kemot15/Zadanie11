@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Array {
     private int number;
     private String text;
-    private static int id = 0;
+    //private static int id = 0;
 
     public Array() {
-        id++;
+       // id++;
     }
 
     public Array(int number, String text) {
@@ -60,11 +60,10 @@ public class Array {
 
     public void setArray (){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj " + id + " element (liczba, opis)");
+        //System.out.println("Podaj " + id + " element (liczba, opis)");
+        System.out.println("Podaj element (liczba, opis)");
         number = scanner.nextInt();
         scanner.nextLine();
         text = scanner.nextLine();
     }
-
-
 }
